@@ -1,0 +1,27 @@
+export default function TableOfContents() {
+  const chapters = [
+    { title: "Creative Content Strategy & Positioning", page: 226 },
+    { title: "Branding", page: 226 },
+    { title: "Visual Identity", page: 226 },
+    { title: "Graphic Ecosystems", page: 226 },
+    { title: "Logotypes & Marks", page: 226 },
+    { title: "Packaging Design", page: 226 },
+    { title: "Digital Communication", page: 226 },
+    { title: "Web Design", page: 238 },
+    { title: "E-commerce", page: 248 },
+    { title: "Advertising", page: 262 },
+    { title: "Retail & Exhibition", page: 278 },
+    { title: "Events & Activation", page: 278 },
+  ];
+
+  return (
+    <div className="flex flex-col w-full max-w-md mx-auto p-4 gap-2 text-black">
+      {chapters.map((chapter, index) => (
+        <div key={index} className="flex justify-between items-start">
+          <span className="text-left text-3xl pr-7">{chapter.title}</span>
+          <span className="text-right text-xs">{chapter.page}</span>
+        </div>
+      ))}
+    </div>
+  );
+}

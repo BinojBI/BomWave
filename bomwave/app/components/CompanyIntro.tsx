@@ -17,7 +17,7 @@ export default function CompanyCover() {
         ease: "easeInOut",
         delay: 1.3,
       }}
-      className="absolute inset-0 bg-white flex flex-col items-center justify-center text-center px-5 z-10"
+      className="absolute inset-0 bg-white flex flex-col h-[107vh] justify-center text-center px-5 z-10"
     >
       <motion.h1
         initial={{ opacity: 0, y: 40 }}
@@ -27,7 +27,7 @@ export default function CompanyCover() {
           ease: "easeInOut",
           delay: 1.6,
         }}
-        className={`${garamondFont}
+        className={`${garamondFont.className}
     w-full text-center text-[#F5C300]
     text-9xl lg:text-9xl md:text-9xl
     leading-tight px-4 md:mt-50
@@ -68,14 +68,14 @@ export default function CompanyCover() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, ease: "easeInOut", delay: 1.4 }}
-        className="w-full md:w-[600px] h-auto md:h-[100vh] mt-6 md:mt-20 md:mr-20 flex self-end"
+        className="w-full md:w-[600px] mt-6 md:mt-20 md:mr-10 md:mb-10 flex self-end"
       >
         <Image
           src="/images/tab-on-hand.png"
           alt="Company Logo"
           width={600} // max width for larger screens
           height={400} // maintains aspect ratio
-          className="w-full md:w-[600px] h-auto md:h-[400px]"
+          className="w-full h-auto"
           priority
         />
       </motion.div>

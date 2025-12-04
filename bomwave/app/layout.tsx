@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, EB_Garamond } from "next/font/google";
 import "./globals.css";
+import localfont from "next/font/local";
+
+const neuemontrealFont = localfont({
+  src: "../public/fonts/ppneuemontreal-medium.otf",
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,9 +34,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.className} ${garamondFont.variable} ${geistMono.variable}`}
-      >
+      <body className={`${neuemontrealFont.className} ${geistMono.variable}`}>
         {children}
       </body>
     </html>

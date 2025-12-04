@@ -9,7 +9,7 @@ export default function Navbar() {
 
   return (
     <nav className="top-0 left-0 w-full bg-white bg-opacity-90 backdrop-blur-md z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto px-4">
         <div className="flex items-center justify-end h-16">
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">
