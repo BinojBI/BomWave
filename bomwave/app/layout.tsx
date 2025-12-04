@@ -4,7 +4,7 @@ import "./globals.css";
 import localfont from "next/font/local";
 
 const neuemontrealFont = localfont({
-  src: "../public/fonts/ppneuemontreal-medium.otf",
+  src: "../public/fonts/ppneuemontreal-book.otf",
 });
 
 const geistSans = Geist({

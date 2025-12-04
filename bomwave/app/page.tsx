@@ -6,6 +6,19 @@ import BookTable from "./components/Table";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { FiPlus, FiMic, FiChevronRight } from "react-icons/fi";
+import localfont from "next/font/local";
+
+const garamondFont = localfont({
+  src: "../public/fonts/EBGaramond-VariableFont_wght.ttf",
+});
+
+const ppneuemontrelthinFont = localfont({
+  src: "../public/fonts/ppneuemontreal-thin.otf",
+});
+
+const ppneuemontrelMediumFont = localfont({
+  src: "../public/fonts/ppneuemontreal-medium.otf",
+});
 
 export default function Home() {
   return (
@@ -20,39 +33,37 @@ export default function Home() {
       {/* About Section */}
       <div className="bg-white flex flex-col">
         <div
-          className=" text-3xl sm:text-4xl md:text-4xl pl-5
-          max-w-[350px] md:max-w-[600px] -mb-30 z-10"
+          className=" text-3xl sm:text-4xl md:text-4xl pl-10
+          max-w-[350px] md:max-w-[600px] -mb-30 z-10 mt-30"
         >
-          <p
-            className="
-          text-gray-800 mt-20 text-left"
+          <span
+            className={`${ppneuemontrelthinFont.className} text-gray-800 mt-20 text-left`}
           >
-            Dubai. Formula One. B·om Institute.
-          </p>
-          <p
-            className="
-          text-[#F5C300]
-          whitespace-nowrap
-        "
-          >
+            Dubai. Formula One. <br />
+            <span className={`${ppneuemontrelthinFont.className} font-bold`}>
+              B·om Institute.
+            </span>
+          </span>
+          <span className="text-[#F5C300] font-bold whitespace-nowrap">
             Hilton.
-          </p>
+          </span>
           <p
-            className="
-          text-gray-800 text-3xl text-left
-        "
+            className={`${ppneuemontrelMediumFont.className} text-gray-800 text-3xl text-left font-medium`}
           >
             Mantrack. Mena Biohacker. Study Permaculture. Azahara International.
-            Waldorf Astoria. Redbull. Green Supreme. Cascais Permaculture
-            Association. Double Tree.
+            Waldorf Astoria.
+            <span className={`${ppneuemontrelMediumFont.className} font-bold`}>
+              Redbull. Green Supreme. Cascais Permaculture Association. Double
+              Tree.
+            </span>
           </p>
-          <p
+          <span
             className="
           text-[#F5C300]
         "
           >
             Ochre Magazine.
-          </p>
+          </span>
         </div>
 
         <Image
@@ -81,12 +92,12 @@ export default function Home() {
 
           {/* Input Field Overlay */}
           <div className="absolute inset-0 flex justify-center items-center">
-            <div className="flex items-center bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 w-3/4 max-w-md">
+            <div className="flex items-center bg-white/20 backdrop-blur-sm rounded-full px-4 py-3 w-3/4 max-w-md">
               <FiPlus className="text-white-700 mr-2" size={20} />
               <input
                 type="text"
                 placeholder="Ask us anything"
-                className="flex-1 bg-transparent placeholder-white outline-none text-white-700"
+                className="flex-1 bg-transparent placeholder-white text-sm outline-none text-white-700"
               />
               <FiMic className="text-white-700 ml-2" size={20} />
             </div>
@@ -95,15 +106,15 @@ export default function Home() {
       </div>
 
       {/*One Chapter Section*/}
-      <div className="px-5 py-16 text-black">
+      <div className="px-10 py-10 text-black">
         <div className="mb-12">
-          <h1 className="text-2xl font-light leading-tight sm:text-5xl lg:text-6xl max-w-[300px] sm:max-w-full">
+          <h1 className="text-1xl font-light leading-tight sm:text-5xl lg:text-6xl max-w-[200px] lg:max-w-full">
             Brand design & communication—inspired by Zen environmentalism, LIS
             Portugal
           </h1>
         </div>
         <div className="flex justify-end">
-          <p className="text-sm leading-relaxed max-w-[300px] text-gray-800">
+          <p className="text-xs leading-relaxed max-w-[300px] text-gray-800 text-justify leading-snug">
             Based on the enlightened philosophy and principles of the Zen
             Japanese Natural Environmentalism pioneered by Masanobu Fukuoka in
             the middle of the 20th Century —The Ochre Media Bureau is positioned
@@ -115,14 +126,14 @@ export default function Home() {
         </div>
 
         <div className="mt-20 flex justify-center pt-4 mb-5">
-          <span className="text-sm text-gray">212</span>
+          <span className="text-xs text-gray">212</span>
         </div>
 
         <hr className="border-gray-300 mb-8" />
       </div>
 
       {/* Meet the Team Section */}
-      <section className="bg-white py-16 sm:py-24">
+      <section className="bg-white py-5 sm:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative">
             <div className="relative max-w-sm mx-auto shadow-xl">
@@ -136,8 +147,8 @@ export default function Home() {
                 />
               </div>
 
-              <div className="absolute top-10 left-1/3 transform -translate-x-1/2 bg-white/70 backdrop-blur-sm p-3 rounded-full border border-gray-300 shadow-md">
-                <span className="text-sm font-medium text-gray-800 whitespace-nowrap">
+              <div className="absolute top-10 left-1/3 transform -translate-x-1/2 backdrop-blur-sm p-3 rounded-full border border-gray-600">
+                <span className="text-sm font-medium text-gray-800 whitespace-nowrap px-2 text-white">
                   Meet the team behind the camera
                 </span>
               </div>
@@ -146,9 +157,17 @@ export default function Home() {
             <div className="w-full md:w-3/4 lg:w-2/3 xl:w-1/2 -mt-40 flex justify-end text-right">
               <p className="text-3xl sm:text-4xl lg:text-5xl font-normal leading-snug max-w-[300px] sm:max-w-full text-gray-900 z-10">
                 Think of your{" "}
-                <span className="text-yellow-500 font-bold">favourite</span>{" "}
-                brands in the world and you immediately feel something —an
-                image, a colour; parallel to a fashion or movement
+                <span className="text-yellow-500 font-normal italic">
+                  {" "}
+                  <br />
+                  favourite
+                </span>{" "}
+                <br /> brands in <br />
+                the world and <br /> you <br />
+                immediately feel something <br /> —an image, a <br /> colour;
+                parallel <br />
+                to a fashion or <br />
+                movement
               </p>
             </div>
           </div>
@@ -190,7 +209,7 @@ export default function Home() {
       </section>
 
       {/* Last Section */}
-      <section className="bg-white pt-16 sm:py-24 overflow-hidden">
+      <section className="bg-white pt-40 sm:py-24 overflow-hidden">
         <div className="container mx-auto sm:px-6 lg:px-8">
           <div className="relative min-h-[700px] md:min-h-[800px]">
             <div className="absolute inset-0 z-0">
@@ -204,35 +223,51 @@ export default function Home() {
               />
             </div>
 
-            <div className="absolute inset-0 z-10 text-white/5 opacity-80 pointer-events-none">
-              <span className="absolute top-[10%] left-[5%] text-[50vw] leading-none font-bold">
+            <div className="absolute inset-0 z-10 text-white opacity-90 pointer-events-none">
+              <span className="absolute top-[15%] -left-[12%] text-[50vw] leading-none font-bold italic">
                 S
               </span>
-              <span className="absolute top-[40%] left-[30%] text-[40vw] leading-none font-light">
+              <span
+                className={`${ppneuemontrelMediumFont.className} absolute top-[38%] left-[30%] text-[40vw] leading-none font-extrabold`}
+              >
+                t
+              </span>
+              <span
+                className={`${ppneuemontrelthinFont.className} absolute top-[32%] right-[25%] text-[60vw] leading-none **font-thin** italic`}
+              >
                 u
               </span>
-              <span className="absolute top-[30%] right-[5%] text-[60vw] leading-none font-extrabold">
+              <span className="absolute bottom-[10%] right-[5%] text-[50vw] leading-none font-light">
                 d
               </span>
-              <span className="absolute bottom-[10%] right-[0%] text-[40vw] leading-none font-bold text-yellow-500">
+              <span
+                className={` ${ppneuemontrelMediumFont.className} absolute bottom-[25%] -right-[8%] text-[50vw] leading-none font-extrabold text-yellow-500`}
+              >
+                o
+              </span>
+              <span
+                className={`${ppneuemontrelMediumFont.className} absolute bottom-[35%] right-[8%] text-[50vw] leading-none font-extrabold text-white`}
+              >
                 i
               </span>
             </div>
 
             <div className="relative z-20 flex flex-col h-full text-white ml-10 ">
-              <div className="max-w-md mb-16 -mt-10">
-                <h2 className="text-4xl sm:text-5xl font-light leading-snug">
-                  Join our portfolio <br />
-                  of clients <br />
-                  who have <br />
-                  understood the <br />
+              <div className="max-w-md mb-30 -mt-40">
+                <h2 className="text-3xl sm:text-5xl font-light leading-snug">
+                  <span className="text-black">
+                    Join our portfolio <br />
+                    of clients <br />
+                    who have <br />
+                    understood the <br />
+                  </span>
                   <span className="font-medium">
-                    power of organic creative.
+                    power of organic <br /> creative.
                   </span>
                 </h2>
               </div>
 
-              <div className="absolute top-10 right-0 text-right text-md mt-50 mr-10 text-white/40">
+              <div className="absolute top-10 right-0 text-right text-md mt-40 mr-10 text-white/70">
                 <p className="hover:text-yellow-500 cursor-pointer">
                   Privacy Policy
                 </p>
@@ -244,49 +279,60 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="mt-auto pt-10 flex flex-col md:flex-row md:justify-between md:items-end w-full">
-                <div className="space-y-2 text-base text-black mb-8 md:mb-0">
+              <div className="mt-auto pt-40 flex flex-col md:flex-row md:justify-between md:items-end w-full">
+                <div className="space-y-1 text-base text-black font-bold mb-8 md:mb-0">
                   <p>RUA DAS TOMADAS, CASCAIS (LIS)</p>
                   <p>00351 912 036 025</p>
                   <p>INFO@OCHRE.MEDIA</p>
-                  <p className="underline hover:text-yellow-500 cursor-pointer">
+                  <p className=" hover:text-yellow-500 cursor-pointer">
                     INSTAGRAM / LINKEDIN
                   </p>
-                  <p className="pt-4 underline hover:text-yellow-500 cursor-pointer">
+                  <p className="pt-4  hover:text-yellow-500 cursor-pointer">
                     COLOPHON
                   </p>
                 </div>
 
-                <div className="flex flex-col space-y-4 w-full max-w-sm">
-                  <div className="flex items-center justify-between bg-white/60 py-3 hover:border-yellow-500 transition-colors cursor-pointer">
+                <div className="flex flex-col space-y-4 max-w-[300px] w-full lg:max-w-full">
+                  <div className="flex items-center rounded-full justify-between bg-black/20 pl-3 py-3 hover:border-yellow-500 transition-colors cursor-pointer">
                     <div className="flex items-center">
-                      <FiPlus className="w-5 h-5 mr-3 text-yellow-500" />
-                      <span className="text-base font-light">
-                        Newsletter — Add you email
-                      </span>
+                      <FiPlus className="w-5 h-5 mr-3 text-white-500" />
+                      <input
+                        type="text"
+                        placeholder="Newsletter — Add you email"
+                        className="flex-1 bg-transparent placeholder-white/70 text-sm outline-none text-white-700"
+                      />
                     </div>
-                    <FiChevronRight className="w-5 h-5" />
+                    <button
+                      className="w-8 h-8 bg-white/30 mr-2 text-black rounded-full flex items-center justify-center shadow-md hover:bg-gray-100 transition-colors"
+                      aria-label="Next" // Always use aria-label for buttons that only contain icons
+                    >
+                      <FiChevronRight className="w-5 h-5" />
+                    </button>
                   </div>
 
-                  <div className="flex items-center justify-between bg-white/60 py-3 px-3 hover:border-yellow-500 transition-colors cursor-pointer">
+                  <div className="flex items-center rounded-full justify-between bg-black/20 py-3 px-3 hover:border-yellow-500 transition-colors cursor-pointer">
                     <div className="flex items-center">
-                      <FiPlus className="w-5 h-5 mr-3 text-yellow-500" />
-                      <span className="text-base font-light">
-                        Ask us anything
-                      </span>
+                      <FiPlus className="w-5 h-5 mr-3 text-white-500" />
+                      <input
+                        type="text"
+                        placeholder="Ask us anything"
+                        className="flex-1 bg-transparent placeholder-white/70 text-sm outline-none text-white-700"
+                      />
                     </div>
                     <FiMic className="w-5 h-5" />
                   </div>
                 </div>
               </div>
 
-              <div className="flex justify-between items-center mt-10 text-xs py-4 border-t border-white/20">
-                <p>
+              <div className="flex justify-between items-center mt-10 text-md py-4">
+                <p className="text-white/20">
                   CREATIVE MEDIA BUREAU <br />
                   INDEPENDENT SINCE 2020
                 </p>
                 <div className="flex items-center">
-                  <span className="text-3xl font-extrabold text-yellow-500 mr-1">
+                  <span
+                    className={`${garamondFont.className} text-5xl font-light text-yellow-500 mr-1`}
+                  >
                     Ochre
                   </span>
                   <span className="text-lg font-light">®</span>

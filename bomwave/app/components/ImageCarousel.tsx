@@ -24,7 +24,7 @@ export default function ImageCarousel() {
   return (
     <div className="w-full bg-white">
       {/* Full Width Image Wrapper */}
-      <div className="relative w-full h-[100px] md:h-[200] overflow-hidden">
+      <div className="relative w-full h-[100px] md:h-[200] mt-20 overflow-hidden">
         <AnimatePresence mode="wait">
           <motion.div
             key={index}

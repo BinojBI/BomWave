@@ -17,7 +17,7 @@ export default function CompanyCover() {
         ease: "easeInOut",
         delay: 1.3,
       }}
-      className="absolute inset-0 bg-white flex flex-col h-[107vh] justify-center text-center px-5 z-10"
+      className="absolute inset-0 bg-white flex flex-col justify-center text-center px-5 z-10"
     >
       <motion.h1
         initial={{ opacity: 0, y: 40 }}
@@ -29,8 +29,7 @@ export default function CompanyCover() {
         }}
         className={`${garamondFont.className}
     w-full text-center text-[#F5C300]
-    text-9xl lg:text-9xl md:text-9xl
-    leading-tight px-4 md:mt-50
+    text-[40vw] leading-[1.1] md:mt-40
   `}
       >
         Ochre
@@ -48,9 +47,9 @@ export default function CompanyCover() {
       >
         <motion.p
           className="
-          text-gray-700 mt-20 text-sm text-justify
-          text-base sm:text-lg md:text-xl 
-          max-w-[350px] md:max-w-[600px]
+          text-gray-700 mt-30 mb-10 text-sm text-justify
+          text-xs sm:text-xs md:text-xl 
+          max-w-[300px] md:max-w-[600px]
         "
         >
           Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -68,16 +67,22 @@ export default function CompanyCover() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, ease: "easeInOut", delay: 1.4 }}
-        className="w-full md:w-[600px] mt-6 md:mt-20 md:mr-10 md:mb-10 flex self-end"
+        className="relative"
       >
-        <Image
-          src="/images/tab-on-hand.png"
-          alt="Company Logo"
-          width={600} // max width for larger screens
-          height={400} // maintains aspect ratio
-          className="w-full h-auto"
-          priority
-        />
+        <div className="absolute -top-10 right-0 w-full flex justify-between text-[20vw] px-2 text-black">
+          <span>/</span>
+          <span>3</span>
+        </div>
+        <div className="w-full md:w-[600px] mt-10 md:mt-20 md:mr-10 md:mb-10 flex self-end">
+          <Image
+            src="/images/tab-on-hand.png"
+            alt="Company Logo"
+            width={600} // max width for larger screens
+            height={400} // maintains aspect ratio
+            className="w-full h-auto"
+            priority
+          />
+        </div>
       </motion.div>
     </motion.div>
   );

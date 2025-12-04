@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function WordPopup({ words }: { words: string[] }) {
   return (
-    <div className="flex justify-center items-center gap-2 text-md h-screen dark:bg-black">
+    <div className="flex justify-center items-center gap-2 text-md h-[90vh] dark:bg-black">
       {words.map((word, index) => (
         <motion.span
           key={index}
