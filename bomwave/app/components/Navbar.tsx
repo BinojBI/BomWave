@@ -9,8 +9,8 @@ export default function Navbar() {
 
   return (
     <nav className="top-0 left-0 w-full bg-white bg-opacity-90 backdrop-blur-md z-50">
-      <div className="mx-auto px-4">
-        <div className="flex items-center justify-end h-16">
+      <div className="mx-auto px-5">
+        <div className="flex items-center justify-end h-16 pt-6">
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">
             <Link
@@ -43,7 +43,7 @@ export default function Navbar() {
                 <svg
                   className="h-6 w-6"
                   fill="none"
-                  stroke="currentColor"
+                  stroke="white"
                   viewBox="0 0 24 24"
                 >
                   <path
@@ -55,7 +55,7 @@ export default function Navbar() {
                 </svg>
               ) : (
                 <svg
-                  className="h-6 w-6"
+                  className="h-6 w-20"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -63,8 +63,8 @@ export default function Navbar() {
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M4 6h16M4 18h16"
+                    strokeWidth={2.5}
+                    d="M4 4h36M4 20h36"
                   />
                 </svg>
               )}
@@ -75,27 +75,41 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden px-2 pt-2 pb-3 space-y-1">
+        <div className="md:hidden fixed inset-0 h-screen px-5 pt-2 pb-3 flex flex-col items-start justify-center bg-white/90 text-4xl">
           <Link
             href="#services"
-            className="block text-gray-800 hover:text-[#F5C300] font-medium"
+            className="block text-gray-500 hover:text-[#F5C300] font-bold"
             onClick={() => setIsOpen(false)}
           >
-            Services
+            philosophy
+          </Link>
+          <Link
+            href="#services"
+            className="block text-yellow-600 hover:text-[#F5C300] font-bold"
+            onClick={() => setIsOpen(false)}
+          >
+            team
           </Link>
           <Link
             href="#about"
-            className="block text-gray-800 hover:text-[#F5C300] font-medium"
+            className="block text-gray-400 hover:text-[#F5C300] font-bold"
             onClick={() => setIsOpen(false)}
           >
-            About
+            portfolio
           </Link>
           <Link
             href="#contact"
-            className="block text-gray-800 hover:text-[#F5C300] font-medium"
+            className="block text-gray-400 hover:text-[#F5C300] font-bold"
             onClick={() => setIsOpen(false)}
           >
-            Contact
+            ochre print
+          </Link>
+          <Link
+            href="#contact"
+            className="block text-gray-400 hover:text-[#F5C300] font-bold pt-10"
+            onClick={() => setIsOpen(false)}
+          >
+            back
           </Link>
         </div>
       )}

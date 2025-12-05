@@ -7,6 +7,10 @@ const garamondFont = localfont({
   src: "../../public/fonts/EBGaramond-VariableFont_wght.ttf",
 });
 
+const fGroteskFont = localfont({
+  src: "../../public/fonts/fgrotesk_book.woff.ttf",
+});
+
 export default function CompanyCover() {
   return (
     <motion.div
@@ -28,8 +32,8 @@ export default function CompanyCover() {
           delay: 1.6,
         }}
         className={`${garamondFont.className}
-    w-full text-center text-[#F5C300]
-    text-[40vw] leading-[1.1] md:mt-40
+    w-full text-center text-[#F5C300] -mt-20
+    text-[40vw] leading-[1.1] md:mt-40 
   `}
       >
         Ochre
@@ -46,41 +50,36 @@ export default function CompanyCover() {
         className="w-full flex justify-end md:mr-40"
       >
         <motion.p
-          className="
-          text-gray-700 mt-30 mb-10 text-sm text-justify
-          text-xs sm:text-xs md:text-xl 
-          max-w-[300px] md:max-w-[600px]
-        "
+          className={`${fGroteskFont.className} text-gray-600 font-bold mt-40 mr-3 mb-10 text-xs text-justify text-xs sm:text-xs md:text-xl max-w-[280px] md:max-w-[600px]`}
         >
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
+          Ochre brand design & communication bureau — world class artistic
+          direction meets global marketing frameworks with proven success —for
+          multibilliondollar companies & boutique small businesses alike. <br />{" "}
+          <br />
+          Headquartered between Lisbon, Cairo and Dubai,Ochre Creative Media
+          Bureau works with it's uniquealignment $\rightarrow$ design
+          $\rightarrow$ delivery methodology,perfected by our founders who
+          employ over 50 yearsof global marketing experience.
         </motion.p>
       </motion.div>
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, ease: "easeInOut", delay: 1.4 }}
-        className="relative"
+        className="relative flex justify-end"
       >
         <div className="absolute -top-10 right-0 w-full flex justify-between text-[20vw] px-2 text-black">
           <span>/</span>
           <span>3</span>
         </div>
-        <div className="w-full md:w-[600px] mt-10 md:mt-20 md:mr-10 md:mb-10 flex self-end">
-          <Image
-            src="/images/tab-on-hand.png"
-            alt="Company Logo"
-            width={600} // max width for larger screens
-            height={400} // maintains aspect ratio
-            className="w-full h-auto"
-            priority
+        <div className="w-full max-w-xs md:w-[600px] mt-10 md:mt-20 md:mr-10 md:mb-10 flex">
+          <video
+            src="/videos/cover.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover"
           />
         </div>
       </motion.div>
