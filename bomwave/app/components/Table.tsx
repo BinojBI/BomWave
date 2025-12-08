@@ -19,7 +19,7 @@ export default function TableOfContents() {
   ];
 
   return (
-    <div className="flex flex-col w-full max-w-md mx-auto p-4 gap-2 text-black">
+    <div className="flex flex-col w-full max-w-md mx-auto p-4 pt-8 gap-0  text-black">
       {chapters.map((chapter, index) => (
         <div key={index} className="flex justify-between items-center">
           {/* We must use dangerouslySetInnerHTML to render the <br /> tag */}
@@ -27,7 +27,9 @@ export default function TableOfContents() {
             className="text-left text-3xl pr-7"
             dangerouslySetInnerHTML={{ __html: chapter.title }}
           />
-          <span className="text-right text-xs items-end">{chapter.page}</span>
+          <span className="text-right text-xs items-end pr-2">
+            {chapter.page}
+          </span>
         </div>
       ))}
     </div>

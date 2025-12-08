@@ -31,10 +31,7 @@ export default function CompanyCover() {
           ease: "easeInOut",
           delay: 1.6,
         }}
-        className={`${garamondFont.className}
-    w-full text-center text-[#F5C300] -mt-20
-    text-[40vw] leading-[1.1] md:mt-40 
-  `}
+        className={`${garamondFont.className} tracking-tight w-full text-center text-[#f5c300] -mt-23 text-[42vw] leading-[1.1] md:mt-40 ml-[-3]`}
       >
         Ochre
       </motion.h1>
@@ -50,16 +47,16 @@ export default function CompanyCover() {
         className="w-full flex justify-end md:mr-40"
       >
         <motion.p
-          className={`${fGroteskFont.className} text-gray-600 font-bold mt-40 mr-3 mb-10 text-xs text-justify text-xs sm:text-xs md:text-xl max-w-[280px] md:max-w-[600px]`}
+          className={`${fGroteskFont.className} text-gray-600 leading-tight font-normal mt-40 mr-3 mb-10 text-xs text-justify text-xs sm:text-xs md:text-xl max-w-[280px] md:max-w-[600px]`}
         >
           Ochre brand design & communication bureau — world class artistic
           direction meets global marketing frameworks with proven success —for
           multibilliondollar companies & boutique small businesses alike. <br />{" "}
           <br />
-          Headquartered between Lisbon, Cairo and Dubai,Ochre Creative Media
-          Bureau works with it's uniquealignment $\rightarrow$ design
-          $\rightarrow$ delivery methodology,perfected by our founders who
-          employ over 50 yearsof global marketing experience.
+          Headquartered between Lisbon, Cairo and Dubai, Ochre Creative Media
+          Bureau works with it's uniquealignment - design - delivery
+          methodology, perfected by our founders who employ over 50 years of
+          global marketing experience.
         </motion.p>
       </motion.div>
       <motion.div
@@ -68,7 +65,7 @@ export default function CompanyCover() {
         transition={{ duration: 0.7, ease: "easeInOut", delay: 1.4 }}
         className="relative flex justify-end"
       >
-        <div className="absolute -top-10 right-0 w-full flex justify-between text-[20vw] px-2 text-black">
+        <div className="absolute -top-11 right-0 w-full flex justify-between text-[20vw] px-2 text-black">
           <span>/</span>
           <span>3</span>
         </div>

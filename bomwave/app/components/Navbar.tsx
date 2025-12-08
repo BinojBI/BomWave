@@ -1,6 +1,15 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import localfont from "next/font/local";
+
+const ppneuemontrelBoldFont = localfont({
+  src: "../../public/fonts/ppneuemontreal-bold.otf",
+});
+
+const fGroteskFont = localfont({
+  src: "../../public/fonts/fgrotesk_book.woff.ttf",
+});
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -75,38 +84,40 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden fixed inset-0 h-screen px-5 pt-2 pb-3 flex flex-col items-start justify-center bg-white/90 text-4xl">
+        <div
+          className={`${fGroteskFont.className} font-bold md:hidden fixed inset-0 h-screen px-10 pt-2 pb-3 flex flex-col items-start justify-center bg-white/90 text-5xl`}
+        >
           <Link
             href="#services"
-            className="block text-gray-500 hover:text-[#F5C300] font-bold"
+            className="block text-gray-400 hover:text-[#F5C300]"
             onClick={() => setIsOpen(false)}
           >
             philosophy
           </Link>
           <Link
             href="#services"
-            className="block text-yellow-600 hover:text-[#F5C300] font-bold"
+            className="block text-yellow-500 hover:text-[#F5C300]"
             onClick={() => setIsOpen(false)}
           >
             team
           </Link>
           <Link
             href="#about"
-            className="block text-gray-400 hover:text-[#F5C300] font-bold"
+            className="block text-gray-300 hover:text-[#F5C300] "
             onClick={() => setIsOpen(false)}
           >
             portfolio
           </Link>
           <Link
             href="#contact"
-            className="block text-gray-400 hover:text-[#F5C300] font-bold"
+            className="block text-gray-300 hover:text-[#F5C300]"
             onClick={() => setIsOpen(false)}
           >
             ochre print
           </Link>
           <Link
             href="#contact"
-            className="block text-gray-400 hover:text-[#F5C300] font-bold pt-10"
+            className="block text-gray-300 hover:text-[#F5C300] font-bold pt-10"
             onClick={() => setIsOpen(false)}
           >
             back

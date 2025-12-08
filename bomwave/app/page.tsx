@@ -42,19 +42,19 @@ export default function Home() {
       {/* About Section */}
       <div className="bg-white flex flex-col">
         <div
-          className=" text-3xl sm:text-4xl md:text-4xl pl-10
-          max-w-[350px] md:max-w-[600px] -mb-30 z-10 mt-30"
+          className=" text-3xl  sm:text-4xl md:text-4xl pl-13
+          max-w-[400px] md:max-w-[600px] -mb-21 z-10 mt-30"
         >
           <span
             className={`${ppneuemontrelthinFont.className} text-gray-800 mt-20 text-left`}
           >
-            Dubai. Formula One. <br />
+            Dubai. Formula 1.
             <span className={`${ppneuemontrelthinFont.className} font-bold`}>
-              B·om Institute.
+              &nbsp;B·om Institute.
             </span>
           </span>
           <span className="text-[#F5C300] font-bold whitespace-nowrap">
-            Hilton.
+            &nbsp;Hilton.
           </span>
           <p className={`text-gray-800 text-3xl text-left`}>
             <span
@@ -67,17 +67,16 @@ export default function Home() {
             <span
               className={`${ppneuemontrelBoldFont.className} text-gray-800 text-3xl text-left font-bold`}
             >
-              Redbull. Green Supreme. Cascais Permaculture Association. Double
-              Tree.
+              &nbsp;Redbull. Green Supreme. Cascais Permaculture Association.
+              Double Tree.
+            </span>
+            <span
+              className={`${ppneuemontrelthinFont.className} text-[#F5C300]`}
+            >
+              {" "}
+              Ochre Magazine.
             </span>
           </p>
-          <span
-            className="
-          text-[#F5C300]
-        "
-          >
-            Ochre Magazine.
-          </span>
         </div>
 
         <Image
@@ -146,7 +145,7 @@ export default function Home() {
       <section className="bg-white py-5 sm:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative">
-            <div className="relative max-w-sm mx-auto shadow-xl">
+            <div className="relative max-w-xs mx-auto shadow-xl">
               <div className="overflow-hidden">
                 <Image
                   src="/images/women-with-camera.png"
@@ -157,15 +156,15 @@ export default function Home() {
                 />
               </div>
 
-              <div className="absolute top-28 left-1/3 transform -translate-x-1/2  p-2 px-4 rounded-full border border-gray-600">
+              <div className="absolute top-24 left-30 transform -translate-x-1/2  p-2 px-4 rounded-full border border-gray-600">
                 <span className="text-xs font-medium text-gray-800 whitespace-nowrap px-2 text-white">
                   Meet the team behind the camera
                 </span>
               </div>
             </div>
 
-            <div className="w-full md:w-3/4 lg:w-2/3 xl:w-1/2 -mt-40 flex justify-end text-right">
-              <p className="text-3xl sm:text-4xl lg:text-5xl font-normal leading-tight max-w-[300px] sm:max-w-full text-gray-900 z-10">
+            <div className="w-full md:w-3/4 lg:w-2/3 xl:w-1/2 -mt-34.5 flex justify-end text-right">
+              <p className="text-[8vw] sm:text-4xl lg:text-5xl font-normal leading-none max-w-[300px] sm:max-w-full text-gray-900 z-10 tracking-wider">
                 Think of your{" "}
                 <span className="text-yellow-500 font-normal italic">
                   {" "}
@@ -198,7 +197,7 @@ export default function Home() {
               />
             </div>
 
-            <div className="relative z-10 -mt-46 sm:-mt-30 ml-15 w-7/8 max-w-lg md:max-w-xl pr-1">
+            <div className="relative z-10 -mt-46 sm:-mt-30 ml-15 w-7/8 max-w-lg md:max-w-xl pr-1.5">
               <Image
                 src="/images/beach-waves.png"
                 alt="Close-up of a wave breaking on the sand."
@@ -209,9 +208,9 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-8 ml-15 max-w-lg mx-auto md:mx-0 md:ml-[50%] lg:ml-[50%]">
+          <div className="mt-7 ml-15 max-w-lg mx-auto md:mx-0 md:ml-[50%] lg:ml-[50%]">
             <p
-              className={`${fGroteskFont.className} text-md font-normal leading-snug text-gray-700`}
+              className={`${fGroteskFont.className} text-md font-normal leading-tight text-gray-700`}
             >
               The greatest brands <br />
               —think local, act global
@@ -236,37 +235,37 @@ export default function Home() {
             </div>
 
             <div className="absolute inset-0 z-10 text-white opacity-90 pointer-events-none">
-              <span className="absolute top-[15%] -left-[8%] text-[50vw] leading-none font-bold ">
+              <span className="absolute top-[14%] -left-[8%] text-[50vw] leading-none font-bold ">
                 S
               </span>
               <span
-                className={`${ppneuemontrelMediumFont.className} absolute top-[38%] left-[20%] text-[40vw] leading-none font-extrabold`}
+                className={`${ppneuemontrelBoldFont.className} absolute top-[35.5%] left-[20%] text-[40vw] leading-none font-extrabold`}
               >
                 t
               </span>
               <span
-                className={`${ppneuemontrelthinFont.className} absolute top-[32%] right-[25%] text-[60vw] leading-none **font-thin** italic`}
+                className={`${ppneuemontrelthinFont.className} absolute top-[34%] right-[28%] text-[65vw] leading-none **font-thin** italic`}
               >
                 u
               </span>
-              <span className="absolute bottom-[10%] right-[5%] text-[50vw] leading-none font-light">
+              <span className="absolute bottom-[7%] right-[6%] text-[51vw] leading-none font-light">
                 d
               </span>
               <span
-                className={` ${ppneuemontrelMediumFont.className} absolute bottom-[25%] -right-[8%] text-[50vw] leading-none font-extrabold text-yellow-500`}
+                className={` ${ppneuemontrelBoldFont.className} absolute bottom-[21%] -right-[8%] text-[50vw] leading-none font-extrabold text-yellow-500`}
               >
                 o
               </span>
               <span
-                className={`${ppneuemontrelMediumFont.className} absolute bottom-[35%] right-[8%] text-[50vw] leading-none font-extrabold text-white`}
+                className={`${ppneuemontrelBoldFont.className} absolute bottom-[30%] right-[8%] text-[50vw] leading-none font-extrabold text-white`}
               >
                 i
               </span>
             </div>
 
             <div className="relative z-20 flex flex-col h-full text-white ml-10 ">
-              <div className="max-w-md mb-30 -mt-30">
-                <h2 className="text-3xl sm:text-5xl font-light leading-none">
+              <div className="max-w-md mb-30 -mt-35">
+                <h2 className="text-3xl sm:text-5xl font-light tracking-widest">
                   <span className="text-black">
                     Join our portfolio <br />
                     of clients <br />
@@ -279,7 +278,9 @@ export default function Home() {
                 </h2>
               </div>
 
-              <div className="absolute top-10 right-0 text-right leading-relaxed text-md mt-45 mr-10 text-white/70">
+              <div
+                className={`${ppneuemontrelthinFont.className} tracking-wide absolute top-10 right-0 text-right leading-relaxed text-md mt-45 mr-10 text-white/90`}
+              >
                 <p className="hover:text-yellow-500 cursor-pointer">
                   Privacy Policy
                 </p>
@@ -292,62 +293,63 @@ export default function Home() {
               </div>
 
               <div className="mt-auto pt-40 flex flex-col md:flex-row md:justify-between md:items-end w-full">
-                <div className="space-y-1 -ml-5 mb-20 leading-tight text-base text-black font-bold mb-8 md:mb-0">
+                <div className="space-y-1 -ml-5 mt-5 mb-20 leading-tight text-base text-black font-extrabold md:mb-0">
                   <p>RUA DAS TOMADAS, CASCAIS (LIS)</p>
                   <p>00351 912 036 025</p>
                   <p>INFO@OCHRE.MEDIA</p>
                   <p className=" hover:text-yellow-500 cursor-pointer">
                     INSTAGRAM / LINKEDIN
                   </p>
+                  <br />
                   <p className="pt-4  hover:text-yellow-500 cursor-pointer">
                     COLOPHON
                   </p>
                 </div>
 
-                <div className="flex flex-col space-y-4 max-w-[300px] w-full lg:max-w-full -ml-5">
-                  <div className="flex items-center rounded-full justify-between bg-black/20 pl-3 py-2 hover:border-yellow-500 transition-colors cursor-pointer">
-                    <div className="flex items-center">
-                      <FiPlus className="w-5 h-5 mr-3 text-white-500" />
-                      <input
-                        type="text"
-                        placeholder="Newsletter — Add you email"
-                        className="flex-1 bg-transparent placeholder-white/70 text-sm outline-none text-white-700"
-                      />
-                    </div>
+                <div className="flex flex-col space-y-3 max-w-[320px] w-full lg:max-w-full -ml-5">
+                  <div className="flex items-center rounded-full justify-between bg-black/15 pl-3 py-2 pr-4 hover:border-yellow-500 transition-colors cursor-pointer">
+                    <FiPlus className="w-5 h-5 mr-3 text-white-500" />
+                    <input
+                      type="text"
+                      placeholder="Newsletter — Add your email"
+                      className={`${fGroteskFont.className} flex-1 bg-transparent placeholder-white font-light text-xs outline-none text-white-700 w-full`}
+                    />
+
                     <button
-                      className="w-8 h-8 bg-white/30 mr-2 text-black rounded-full flex items-center justify-center shadow-md hover:bg-gray-100 transition-colors"
+                      className="w-8 h-8 bg-white/30 text-white rounded-full flex items-center justify-center shadow-md hover:bg-gray-100 transition-colors ml-"
                       aria-label="Next" // Always use aria-label for buttons that only contain icons
                     >
                       <FiChevronRight className="w-5 h-5" />
                     </button>
                   </div>
 
-                  <div className="flex items-center rounded-full justify-between bg-black/20 py-3 px-3 hover:border-yellow-500 transition-colors cursor-pointer">
-                    <div className="flex items-center">
-                      <FiPlus className="w-5 h-5 mr-3 text-white-500" />
-                      <input
-                        type="text"
-                        placeholder="Ask us anything"
-                        className="flex-1 bg-transparent placeholder-white/70 text-sm outline-none text-white-700"
-                      />
-                    </div>
+                  <div className="flex items-center rounded-full justify-between bg-black/15 py-3 px-3 hover:border-yellow-500 transition-colors cursor-pointer">
+                    <FiPlus className="w-5 h-5 mr-3 text-white-500" />
+                    <input
+                      type="text"
+                      placeholder="Ask us anything"
+                      className={` ${fGroteskFont.className} flex-1 bg-transparent placeholder-white text-xs outline-none text-white-700`}
+                    />
+
                     <FiMic className="w-5 h-5" />
                   </div>
                 </div>
               </div>
 
               <div className="flex justify-between items-center mt-10 text-md py-4 pb-10">
-                <p className="text-white/20">
+                <p className="text-white/30">
                   CREATIVE MEDIA BUREAU <br />
                   INDEPENDENT SINCE 2020
                 </p>
                 <div className="flex items-center">
                   <span
-                    className={`${garamondFont.className} text-5xl font-light text-yellow-500 mr-1`}
+                    className={`${garamondFont.className} text-5xl font-light text-yellow-500`}
                   >
                     Ochre
                   </span>
-                  <span className="text-lg font-light">®</span>
+                  <span className="text-lg font-light text-yellow-500 mr-3">
+                    ®
+                  </span>
                 </div>
               </div>
             </div>
