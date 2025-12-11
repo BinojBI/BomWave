@@ -31,7 +31,7 @@ export default function CompanyCover() {
           ease: "easeInOut",
           delay: 1.6,
         }}
-        className={`${garamondFont.className} tracking-tight w-full text-center text-[#f5c300] text-[42vw] leading-[1.1] md:mt-40 ml-[-3]`}
+        className={`${garamondFont.className} tracking-tight pt-24 w-full text-center text-[#f5c300] text-[42vw] leading-[1.1] md:mt-40 ml-[-3]`}
       >
         Ochre
       </motion.h1>
