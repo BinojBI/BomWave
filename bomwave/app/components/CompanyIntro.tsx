@@ -31,7 +31,7 @@ export default function CompanyCover() {
           ease: "easeInOut",
           delay: 1.6,
         }}
-        className={`${garamondFont.className} tracking-tight w-full text-center text-[#f5c300] -mt-23 text-[42vw] leading-[1.1] md:mt-40 ml-[-3]`}
+        className={`${garamondFont.className} tracking-tight w-full text-center text-[#f5c300] text-[42vw] leading-[1.1] md:mt-40 ml-[-3]`}
       >
         Ochre
       </motion.h1>
@@ -65,7 +65,7 @@ export default function CompanyCover() {
         transition={{ duration: 0.7, ease: "easeInOut", delay: 1.4 }}
         className="relative flex justify-end"
       >
-        <div className="absolute -top-11 right-0 w-full flex justify-between text-[20vw] px-2 text-black">
+        <div className="absolute -top-9 -right-2 w-full flex justify-between text-[20vw] px-2 text-black">
           <span>/</span>
           <span>3</span>
         </div>

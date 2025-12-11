@@ -31,10 +31,10 @@ const fGroteskFont = localfont({
 
 export default function Home() {
   return (
-    <div className="flex flex-col w-full min-h-screen dark:bg-white">
+    <div className="flex flex-col w-full min-h-screen bg-white">
       <Navbar />
       <main>
-        <WordPopup words={["Creative", "Smart", "Impactful"]} />
+        <WordPopup words={["Visionary", "Creative —"]} />
         <CompanyIntro />
       </main>
       <ImageCarousel />
@@ -279,7 +279,7 @@ export default function Home() {
               </div>
 
               <div
-                className={`${ppneuemontrelthinFont.className} tracking-wide absolute top-10 right-0 text-right leading-relaxed text-md mt-45 mr-10 text-white/90`}
+                className={`${ppneuemontrelthinFont.className} tracking-wide absolute top-10 right-0 text-right leading-relaxed text-md mt-45 mr-10 text-white/90 font-bold`}
               >
                 <p className="hover:text-yellow-500 cursor-pointer">
                   Privacy Policy
@@ -293,7 +293,9 @@ export default function Home() {
               </div>
 
               <div className="mt-auto pt-40 flex flex-col md:flex-row md:justify-between md:items-end w-full">
-                <div className="space-y-1 -ml-5 mt-5 mb-20 leading-tight text-base text-black font-extrabold md:mb-0">
+                <div
+                  className={`${ppneuemontrelMediumFont.className} space-y-1 -ml-5 mt-5 mb-20 leading-tight text-base text-black font-bold md:mb-0`}
+                >
                   <p>RUA DAS TOMADAS, CASCAIS (LIS)</p>
                   <p>00351 912 036 025</p>
                   <p>INFO@OCHRE.MEDIA</p>
@@ -337,7 +339,7 @@ export default function Home() {
               </div>
 
               <div className="flex justify-between items-center mt-10 text-md py-4 pb-10">
-                <p className="text-white/30">
+                <p className="text-white/50 -ml-5">
                   CREATIVE MEDIA BUREAU <br />
                   INDEPENDENT SINCE 2020
                 </p>

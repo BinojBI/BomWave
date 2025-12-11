@@ -1,8 +1,11 @@
 export default function TableOfContents() {
   const chapters = [
     {
-      title:
-        "Creative Content <br />   Strategy & <br />  &nbsp; &nbsp; Positioning",
+      title: "Creative Content",
+      page: 226,
+    },
+    {
+      title: "Strategy & <br />  &nbsp; &nbsp; Positioning",
       page: 226,
     },
     { title: "Branding", page: 226 },
