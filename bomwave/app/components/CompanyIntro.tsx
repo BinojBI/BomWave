@@ -21,7 +21,7 @@ export default function CompanyCover() {
         ease: "easeInOut",
         delay: 1.3,
       }}
-      className="absolute inset-0 bg-white flex flex-col justify-center text-center px-5 z-10"
+      className="bg-white flex flex-col justify-center text-center px-5 z-10 pb-10 pt-8"
     >
       <motion.h1
         initial={{ opacity: 0, y: 40 }}
@@ -31,7 +31,7 @@ export default function CompanyCover() {
           ease: "easeInOut",
           delay: 1.6,
         }}
-        className={`${garamondFont.className} tracking-tight pt-24 w-full text-center text-[#f5c300] text-[42vw] leading-[1.1] md:mt-40 ml-[-3]`}
+        className={`${garamondFont.className} tracking-tight pt-20p w-full text-center text-[#f5c300] text-[42vw] leading-[1.1] md:mt-40 ml-[-3]`}
       >
         Ochre
       </motion.h1>

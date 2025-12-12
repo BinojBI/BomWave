@@ -43,7 +43,7 @@ export default function Home() {
       <div className="bg-white flex flex-col">
         <div
           className=" text-3xl  sm:text-4xl md:text-4xl pl-13
-          max-w-[400px] md:max-w-[600px] -mb-21 z-10 mt-30"
+          max-w-[400px] md:max-w-[600px] -mb-21 z-10 mt-20"
         >
           <span
             className={`${ppneuemontrelthinFont.className} text-gray-800 mt-20 text-left`}
@@ -225,7 +225,7 @@ export default function Home() {
           <div className="relative min-h-[700px] md:min-h-[800px]">
             <div className="absolute inset-0 z-0">
               <video
-                src="/videos/nature-blur.mp4"
+                src="/videos/nature-blur2.mp4"
                 autoPlay
                 loop
                 muted
@@ -248,7 +248,7 @@ export default function Home() {
               >
                 u
               </span>
-              <span className="absolute bottom-[7%] right-[6%] text-[51vw] leading-none font-light">
+              <span className="absolute bottom-[8%] right-[6%] text-[51vw] leading-none font-light">
                 d
               </span>
               <span
@@ -339,13 +339,13 @@ export default function Home() {
               </div>
 
               <div className="flex justify-between items-center mt-10 text-md py-4 pb-10">
-                <p className="text-white/50 -ml-5">
+                <p className="text-white/50 -ml-5 font-bold">
                   CREATIVE MEDIA BUREAU <br />
                   INDEPENDENT SINCE 2020
                 </p>
                 <div className="flex items-center">
                   <span
-                    className={`${garamondFont.className} text-5xl font-light text-yellow-500`}
+                    className={`${garamondFont.className} text-5xl tracking-tighter font-light text-yellow-500`}
                   >
                     Ochre
                   </span>

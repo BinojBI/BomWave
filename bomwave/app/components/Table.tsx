@@ -24,7 +24,7 @@ export default function TableOfContents() {
   return (
     <div className="flex flex-col w-full max-w-md mx-auto p-4 pt-8 gap-0  text-black">
       {chapters.map((chapter, index) => (
-        <div key={index} className="flex justify-between items-center">
+        <div key={index} className="flex justify-between items-end">
           {/* We must use dangerouslySetInnerHTML to render the <br /> tag */}
           <span
             className="text-left text-3xl pr-7"

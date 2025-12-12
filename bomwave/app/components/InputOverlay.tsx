@@ -16,7 +16,8 @@ export default function InputOverlay() {
   const isInputEmpty = text.trim() === "";
   const RightIcon = isInputEmpty ? FiMic : FiChevronRight;
   const borderRadiusClass = isMultiline ? "rounded-4xl" : "rounded-full";
-  const bgColorClass = isMultiline ? "bg-gray-500/70" : "bg-gray-500/30";
+  const bgColorClass =
+    !isInputEmpty || isMultiline ? "bg-gray-500/70" : "bg-gray-500/30";
   const isPresentAndMultiline = isInputEmpty || !isMultiline;
 
   return (

@@ -28,9 +28,9 @@ export default function Navbar() {
   }, [isOpen]);
 
   return (
-    <nav className="top-0 left-0 w-full bg-white bg-opacity-90 backdrop-blur-md z-50">
+    <nav className="absolute top-0 left-0 w-full z-50">
       <div className="mx-auto px-5">
-        <div className="flex items-center justify-end h-16 pt-6">
+        <div className="flex items-center bg-opacity-0 justify-end h-16 pt-6">
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">
             <Link
@@ -57,7 +57,7 @@ export default function Navbar() {
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
-              className="text-gray-800 hover:text-[#F5C300] focus:outline-none"
+              className="text-black hover:text-[#F5C300] focus:outline-none"
             >
               {isOpen ? (
                 <svg
